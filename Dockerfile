@@ -4,12 +4,11 @@ FROM python:3.10.7
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install --upgrade wheel
-RUN pip install --upgrade pipenv
 
 # Install app
 COPY . /app
 WORKDIR /app
-RUN pipenv install --system --deploy
+RUN chmod +x ./docker-entrypoint.sh
+RUN pip install -r requirements.txt
 
-# Run app using gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:5002", "app:app"]
+EXPOSE 5002

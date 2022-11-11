@@ -52,7 +52,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'wompweb/womps'),
+    os.path.join(BASE_DIR, 'womps'),
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

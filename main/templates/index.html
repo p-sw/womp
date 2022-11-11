@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ShyLily WompWomp Counter</title>
+        <meta name="title" content="ShyLily Womp Counter">
+        <meta name="description" content="Subscribe to ShyLily!!!! (womp womp)">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://womp.sserve.work/">
+        <meta property="og:title" content="ShyLily Womp Counter">
+        <meta property="og:description" content="Subscribe to ShyLily!!!! (womp womp)">
+        <meta property="og:image" content="{% static 'banner.webp' %}">
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://womp.sserve.work/">
+        <meta property="twitter:title" content="ShyLily Womp Counter">
+        <meta property="twitter:description" content="Subscribe to ShyLily!!!! (womp womp)">
+        <meta property="twitter:image" content="{% static 'banner.webp' %}">
+
+        <meta property="theme-color" content="#ADE9F8">
+
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    </head>
+    <body>
+        <nav>
+            <h1>WompWomp Counter</h1>
+            <div class="links">
+                <a href="https://www.youtube.com/c/Shylily">Subscribe to ShyLily</a>
+            </div>
+        </nav>
+        <main>
+            <h1>
+                {{ womps }} Global Womps
+            </h1>
+            <div class="btn">
+                <button id="womp">Womp!</button>
+            </div>
+        </main>
+        <script src="{% static 'js/index.js' %}"></script>
+    </body>
+</html>

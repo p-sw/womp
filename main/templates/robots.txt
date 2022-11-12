@@ -1,6 +1,0 @@
-User-agent: *
-Allow:/
-Disallow: /count
-Disallow: /total
-
-Sitemap: https://womp.sserve.work/sitemap.xml

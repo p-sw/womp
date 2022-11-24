@@ -10,4 +10,4 @@ python manage.py migrate
 
 # Start server
 echo "Starting server"
-gunicorn wompweb.wsgi:application --bind 0.0.0.0:5002
+gunicorn wompweb.wsgi:application --bind 0.0.0.0:5000

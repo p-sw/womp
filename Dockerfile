@@ -11,4 +11,4 @@ WORKDIR /app
 RUN chmod +x ./docker-entrypoint.sh
 RUN pip install -r requirements.txt
 
-EXPOSE 5002
+CMD ["./docker-entrypoint.sh"]
